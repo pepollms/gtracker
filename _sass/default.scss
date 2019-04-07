@@ -231,25 +231,27 @@ div.collapsible-vertical-spacer {
     font-size: 24px;
 }
 
-.font-size-detail {
-    font-size: 30px;
+.font-size-small-percent {
+    font-size: 22px;
 }
 
 .font-size-summary {
-    font-size: 34px;
+    font-size: 30px;
 }
 
-.font-size-small-percent {
-    font-size: 22px;
+.font-size-summary-percent {
+    font-size: 30px;
+}
+
+.font-size-detail {
+    font-size: 26px;
 }
 
 .font-size-detail-percent {
     font-size: 26px;
 }
 
-.font-size-summary-percent {
-    font-size: 30px;
-}
+
 
 
 
@@ -279,18 +281,22 @@ div.height-small {
 }
 
 div.height-detail {
+    div.font-size-detail.font-weight-bold.text-uppercase {
+        margin: 0;
+        padding: 0;
+        padding-top: 6px;
+    }
     div.font-size-detail.font-weight-bold.text-align-middle {
         margin: 0;
         padding: 0;
-        padding-top: 2px;
+        padding-top: 6px;
     }
-    div {
-        div.font-size-detail-percent.font-weight-bold.text-align-middle {
-            margin: 0;
-            padding: 0;
-            padding-top: 5px;
-        }
+    div.font-size-detail-percent.font-weight-bold.text-align-middle {
+        margin: 0;
+        padding: 0;
+        padding-top: 6px;
     }
+    /*
     div.font-size-detail.font-weight-bold.text-align-middle.text-uppercase {
         margin: 0;
         padding: 0;
@@ -301,6 +307,7 @@ div.height-detail {
             padding-top: 4px;
         }
     }
+    */
     // Special case for barangay details percentage
     div.progress-bar {
         span.font-size-detail-percent.font-weight-bold {
@@ -320,7 +327,7 @@ div.height-summary {
     div.font-size-summary.font-weight-bold.text-align-middle {
         margin: 0;
         padding: 0;
-        padding-top: 2px;
+        padding-top: 6px;
     }
     div.font-size-summary-percent.font-weight-bold.text-align-middle {
         margin: 0;
