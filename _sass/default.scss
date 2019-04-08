@@ -5,7 +5,8 @@ $debug_border_width:    3px;
 @import url(https://fonts.googleapis.com/css?family=Roboto:700);
 @import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700);
 
-$font_sans: "IBM Plex Sans", "Roboto", sans;
+//$font_sans: "IBM Plex Sans", "Roboto", sans;
+$font_sans: "Roboto", sans;
 
 body {
     background: $page_background;
@@ -40,8 +41,8 @@ $body_margin: 10px;
 
 $spacer_pv: 2px;
 
-$label_percent_length: 110px;
-$label_number_length: 150px;
+$label_percent_length: 60px;
+$label_number_length: 90px;
 $label_pv_length: ($label_percent_length + $label_number_length + $spacer_pv);
 $label_long_length: $label_pv_length;
 
@@ -58,6 +59,8 @@ $spacer_xl_length: 10px;
  * and wrap the right side content.
  */
 $width_break: 500px;
+$width_break: 421px;
+$width_break: 400px;
 
 $progress_bar_long_min_width: $width_break;
 /*
@@ -70,6 +73,8 @@ $progress_bar_long_max_width: ($label_pv_length + $spacer_pv + $label_pv_length 
 @media (min-width: 1200px) {
     $progress_bar_long_max_width: 100%;
 }
+
+$progress_bar_long_max_width: $width_break;
 
 /*
  * Arbitrarily chosen value when to break the detail contents
@@ -103,11 +108,11 @@ $detail_small_content: calc((100% - (#{$spacer_length} * 2)) / 3);
 }
 
 .height-summary {
-    height: 60px;
+    height: 42px;
 }
 
 .height-detail {
-    height: 50px;
+    height: 42px;
 }
 
 .height-small {
@@ -215,6 +220,7 @@ div.collapsible-vertical-spacer {
     }
 }
 
+/*
 .font-size-20 {
     font-size: 20px;
 }
@@ -234,21 +240,22 @@ div.collapsible-vertical-spacer {
 .font-size-small-percent {
     font-size: 22px;
 }
+*/
 
 .font-size-summary {
-    font-size: 30px;
+    font-size: 16pt;
 }
 
 .font-size-summary-percent {
-    font-size: 30px;
+    font-size: 16pt;
 }
 
 .font-size-detail {
-    font-size: 26px;
+    font-size: 16pt;
 }
 
 .font-size-detail-percent {
-    font-size: 26px;
+    font-size: 16pt;
 }
 
 
@@ -307,7 +314,6 @@ div.height-detail {
             padding-top: 4px;
         }
     }
-    */
     // Special case for barangay details percentage
     div.progress-bar {
         span.font-size-detail-percent.font-weight-bold {
@@ -316,6 +322,7 @@ div.height-detail {
             padding-top: 0px;
         }
     }
+    */
 }
 
 div.height-summary {

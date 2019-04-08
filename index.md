@@ -2,6 +2,8 @@
 layout: home
 ---
 
+
+
 <div class="d-flex flex-wrap justify-content-left">
 
 <div class="block flex-column flex-grow-1">
@@ -84,6 +86,67 @@ layout: home
         </div>
         <div class="fix-spacer-h"></div>
     </div>
+
+    <div class="spacer-w2"></div>
+
+    <div class="block">
+        <div class="spacer-h"></div>
+        <div class="info-label-pv height-summary bg-label rounded-top">
+            <div class="font-size-summary font-weight-bold text-uppercase text-center text-align-middle">SFP</div>
+        </div>
+        <div class="fix-spacer-h2"></div>
+        <div class="block height-summary d-flex">
+            <div class="info-value-number rounded-bottom-left">
+                <div class="font-size-summary font-weight-bold text-center text-align-middle">{{ site.data.all.total.total_nac }}</div>
+            </div>
+            <div class="spacer-w2"></div>
+            <div class="info-value-percent rounded-bottom-right">
+                <div class="font-size-summary-percent font-weight-bold text-center text-align-middle">{{ site.data.all.total.percentage_nac }}%</div>
+            </div>
+        </div>
+        <div class="fix-spacer-h"></div>
+    </div>
+
+    <div class="spacer-w2"></div>
+
+    <div class="block">
+        <div class="spacer-h"></div>
+        <div class="info-label-pv height-summary bg-label rounded-top">
+            <div class="font-size-summary font-weight-bold text-uppercase text-center text-align-middle">LTM</div>
+        </div>
+        <div class="fix-spacer-h2"></div>
+        <div class="block height-summary d-flex">
+            <div class="info-value-number rounded-bottom-left">
+                <div class="font-size-summary font-weight-bold text-center text-align-middle">{{ site.data.all.total.total_rtt }}</div>
+            </div>
+            <div class="spacer-w2"></div>
+            <div class="info-value-percent rounded-bottom-right">
+                <div class="font-size-summary-percent font-weight-bold text-center text-align-middle">{{ site.data.all.total.percentage_rtt }}%</div>
+            </div>
+        </div>
+        <div class="fix-spacer-h"></div>
+    </div>
+
+    <div class="spacer-w2"></div>
+
+    <div class="block">
+        <div class="spacer-h"></div>
+        <div class="info-label-pv height-summary bg-label rounded-top">
+            <div class="font-size-summary font-weight-bold text-uppercase text-center text-align-middle">UND</div>
+        </div>
+        <div class="fix-spacer-h2"></div>
+        <div class="block height-summary d-flex">
+            <div class="info-value-number rounded-bottom-left">
+                <div class="font-size-summary font-weight-bold text-center text-align-middle">{{ site.data.all.total.total_undecided_1 }}</div>
+            </div>
+            <div class="spacer-w2"></div>
+            <div class="info-value-percent rounded-bottom-right">
+                <div class="font-size-summary-percent font-weight-bold text-center text-align-middle">{{ site.data.all.total.percentage_undecided_1 }}%</div>
+            </div>
+        </div>
+        <div class="fix-spacer-h"></div>
+    </div>
+
 </div>
 
 </div>
@@ -144,6 +207,49 @@ layout: home
             </div>
         </div>
     </div>
+
+    <div class="spacer-w2"></div>
+
+    <div class="block flex-column">
+        <div class="block height-detail d-flex flex-row">
+            <div class="info-value-number rounded-top-left rounded-bottom-left">
+                <div class="font-size-detail font-weight-bold text-center text-align-middle">{{ item.total_sfp }}</div>
+            </div>
+            <div class="spacer-w2"></div>
+            <div class="info-value-percent rounded-top-right rounded-bottom-right">
+                <div class="font-size-detail-percent font-weight-bold text-center text-align-middle">{{ item.percentage_sfp }}%</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer-w2"></div>
+
+    <div class="block flex-column">
+        <div class="block height-detail d-flex flex-row">
+            <div class="info-value-number rounded-top-left rounded-bottom-left">
+                <div class="font-size-detail font-weight-bold text-center text-align-middle">{{ item.total_ltm }}</div>
+            </div>
+            <div class="spacer-w2"></div>
+            <div class="info-value-percent rounded-top-right rounded-bottom-right">
+                <div class="font-size-detail-percent font-weight-bold text-center text-align-middle">{{ item.percentage_ltm }}%</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer-w2"></div>
+
+    <div class="block flex-column">
+        <div class="block height-detail d-flex flex-row">
+            <div class="info-value-number rounded-top-left rounded-bottom-left">
+                <div class="font-size-detail font-weight-bold text-center text-align-middle">{{ item.total_undecided_2 }}</div>
+            </div>
+            <div class="spacer-w2"></div>
+            <div class="info-value-percent rounded-top-right rounded-bottom-right">
+                <div class="font-size-detail-percent font-weight-bold text-center text-align-middle">{{ item.percentage_undecided_2 }}%</div>
+            </div>
+        </div>
+    </div>
+
 </div>
 </div>
 
