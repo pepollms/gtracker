@@ -425,7 +425,12 @@ if [ ${op_import_current_data} -eq 1 ]; then
                 `"\\COPY vt_import_current("`
                 `" municipality_code,"`
                 `" precinct,"`
-                `" current) FROM '${file}' DELIMITER ',' CSV HEADER ENCODING 'UTF8';"
+                `" nac,"`
+                `" rtt,"`
+                `" undecided_1,"`
+                `" sfp,"`
+                `" ltm,"`
+                `" undecided_2) FROM '${file}' DELIMITER ',' CSV HEADER ENCODING 'UTF8';"
             create_file ${sql_file} "${current_file_content}"
             echo "Executing ${sql_file}."
             psql -d postgres -w -f ${sql_file}
