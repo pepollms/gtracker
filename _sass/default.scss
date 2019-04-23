@@ -268,6 +268,13 @@ div.collapsible-vertical-spacer {
 
 .bg-label {
     background: $label_background !important;
+
+}
+.bg-label.bg-color-green {
+    background: $label_background_2 !important;
+}
+.bg-label.bg-color-gray {
+    background: $label_background_3 !important;
 }
 
 
@@ -403,11 +410,22 @@ div.height-summary {
     font-family: $font_sans;
     color: $value_color;
     background: $value_background;
-//    @if $debug_mode == 1 {
-//        margin: $debug_margin;
-//        padding: $debug_padding;
-//        border: $debug_border_width solid $color_border;
-//    }
+}
+
+.info-value-percent.bg-color-green {
+    background: $label_background_2;
+}
+
+.info-value-percent.bg-color-gray {
+    background: $label_background_3;
+}
+
+.info-value-number.bg-color-green {
+    background: $label_background_2;
+}
+
+.info-value-number.bg-color-gray {
+    background: $label_background_3;
 }
 
 .info-value-percent {
