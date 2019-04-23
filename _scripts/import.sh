@@ -279,6 +279,9 @@ while [ $# -gt 0 ] && [[ "${COMMANDS[@]}" =~ "${1}" ]]; do
     elif [ "$1" == "${CMD_CREATE_MARKDOWN}" ]; then
         op_create_markdown=1
         shift
+    else
+        echo "Unknown command: $1"
+        exit 1
     fi
 done
 
