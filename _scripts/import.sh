@@ -416,6 +416,7 @@ if [ ${op_import_current_data} -eq 1 ]; then
     IFS=$'\n' files=($(sort <<<"${files[*]}"))
     unset IFS
     if (( "${#files[@]}" )); then
+        psql -d postgres -w -c "delete from vt_import_current;"
         echo "Importing ${#files[@]} files:"
         echo "${files}"
         sql_current_files=()
